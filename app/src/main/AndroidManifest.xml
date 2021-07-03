@@ -11,10 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoVaxin">
-        <activity android:name=".ErrorActivity"></activity>
-        <activity android:name=".VaccinationCenters" />
-        <activity android:name=".Details" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ErrorActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VaccinationCenters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
