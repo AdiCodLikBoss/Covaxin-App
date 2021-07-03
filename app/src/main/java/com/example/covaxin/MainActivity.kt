@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.example.covaxin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    //Splash Screen
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
