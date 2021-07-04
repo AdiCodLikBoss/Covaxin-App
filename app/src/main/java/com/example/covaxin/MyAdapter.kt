@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import java.util.*
 
 
 class MyAdapter(val centerlist: List<Centers>):RecyclerView.Adapter<MyAdapter.myviewholder>() {
@@ -28,13 +29,13 @@ class MyAdapter(val centerlist: List<Centers>):RecyclerView.Adapter<MyAdapter.my
     override fun onBindViewHolder(holder: myviewholder, position: Int) {
         val mycenter:Centers
         mycenter=centerlist[position]
-        holder.name_of_center.text=mycenter.name.toUpperCase()
-        holder.address.text=mycenter.address.toUpperCase()
-        holder.district.text=mycenter.district.toUpperCase()
-        holder.fee_type.text=mycenter.fee_type.toUpperCase()
+        holder.name_of_center.text=mycenter.name.toUpperCase(Locale.ENGLISH)
+        holder.address.text=mycenter.address.toUpperCase(Locale.ENGLISH)
+        holder.district.text=mycenter.district.toUpperCase(Locale.ENGLISH)
+        holder.fee_type.text=mycenter.fee_type.toUpperCase(Locale.ENGLISH)
         holder.from.text=mycenter.from.substring(0,5)
         holder.to.text=mycenter.to.substring(0,5)
-        holder.type_of_vaccine.text=mycenter.type_of_vaccine.toUpperCase()
+        holder.type_of_vaccine.text=mycenter.type_of_vaccine.toUpperCase(Locale.ENGLISH)
     }
 
     override fun getItemCount(): Int {

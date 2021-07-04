@@ -3,6 +3,7 @@ package com.example.covaxin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.covaxin.databinding.ActivityDetailsBinding
 
@@ -13,6 +14,7 @@ class Details : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        View.SYSTEM_UI_FLAG_FULLSCREEN
 
         binding.search.setOnClickListener{
 

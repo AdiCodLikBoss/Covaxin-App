@@ -13,7 +13,8 @@
         android:theme="@style/Theme.CoVaxin">
         <activity
             android:name=".ErrorActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".VaccinationCenters"
             android:screenOrientation="portrait" />

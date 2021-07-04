@@ -4,86 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:orientation="vertical"
     android:gravity="clip_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".Details">
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="165dp"
         android:layout_height="165dp"
-        app:lottie_rawRes="@raw/covid_vaccination"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        />
+        app:lottie_rawRes="@raw/covid_vaccination" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
         android:fontFamily="@font/aclonica"
         android:padding="4dp"
         android:text="Hello,"
         android:textColor="@color/black"
         android:textSize="35sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:fontFamily="@font/aclonica"
         android:padding="4dp"
         android:text="Enter the details"
         android:textColor="@color/black"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginStart="15dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the pincode"
+        android:layout_marginStart="19dp"
         android:layout_marginLeft="19dp"
-        android:textColor="#666666"
-        android:textSize="18sp"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="19dp" />
+        android:text="Enter the pincode"
+        android:textColor="#666666"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_height="wrap_content">
 
-     <com.google.android.material.textfield.TextInputLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:hint="Pin"
-         android:layout_marginLeft="13dp"
-         android:layout_marginRight="13dp"
-         app:counterEnabled="true"
-         app:counterMaxLength="6"
-         app:boxStrokeColor="@color/black"
-         app:hintTextColor="@color/black"
-         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-         >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:hint="Pin"
+            app:boxStrokeColor="@color/black"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            app:hintTextColor="@color/black">
 
-      <com.google.android.material.textfield.TextInputEditText
-          android:id="@+id/pin"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:inputType="number"
-          android:textColor="@color/black"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:textCursorDrawable="@drawable/cursor"
-          />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
-     </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     </LinearLayout>
@@ -91,44 +84,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a Date"
+        android:layout_marginStart="19dp"
         android:layout_marginLeft="19dp"
-        android:textColor="#666666"
-        android:textSize="18sp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="19dp" />
+        android:text="Select a Date"
+        android:textColor="#666666"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:orientation="horizontal">
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="date"
-            app:hintTextColor="@color/black"
-            app:helperText="*Format - dd/mm/yyyy"
-            app:helperTextTextColor="@color/black"
             android:layout_marginLeft="13dp"
             android:layout_marginRight="13dp"
+            android:hint="date"
             app:boxStrokeColor="@color/black"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+            app:helperText="*Format - dd/mm/yyyy"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/date"
-            android:textCursorDrawable="@drawable/cursor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
     </LinearLayout>
@@ -137,15 +126,14 @@
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="11dp"
+        android:backgroundTint="@color/black"
+        android:padding="18dp"
         android:text="Search"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:backgroundTint="@color/black"
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
-        android:padding="18dp"
-        android:layout_marginTop="25dp"
-        />
+        android:textStyle="bold" />
 
 
 </LinearLayout>
